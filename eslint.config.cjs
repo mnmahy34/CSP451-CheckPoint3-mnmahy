@@ -5,10 +5,10 @@ module.exports = [
   {
     languageOptions: {
       ecmaVersion: "latest",
-      sourceType: "script",
+      sourceType: "script", // CommonJS style
       globals: {
-        ...globals.node,
-        ...globals.jest
+        ...globals.node,   // adds require, module, __dirname, etc
+        ...globals.jest    // adds test, expect, describe
       }
     },
     rules: {
