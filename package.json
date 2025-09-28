@@ -1,23 +1,15 @@
 {
   "name": "cp3",
   "version": "1.0.0",
-  "description": "",
+  "description": "CI/CD assignment with GitHub Actions",
   "main": "index.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "scripts": {
-    "lint": "eslint .",
-    "format": "prettier --check .",
+    "lint": "npx eslint .",
+    "format": "npx prettier --check .",
     "test": "jest --coverage",
     "build": "echo 'Build successful' && mkdir -p dist && cp index.js dist/"
   },
   "devDependencies": {
-    "@eslint/js": "^9.36.0",
-    "eslint": "^9.36.0",
-    "globals": "^16.4.0",
-    "jest": "^30.2.0",
-    "prettier": "^3.6.2",
-    "typescript-eslint": "^8.44.1"
-  }
-}
