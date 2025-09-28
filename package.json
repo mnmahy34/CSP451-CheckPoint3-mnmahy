@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "lint": "eslint .",
+    "format": "prettier --check .",
+    "test": "jest --coverage",
+    "build": "echo 'Build successful' && mkdir -p dist && cp index.js dist/"
+  },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "eslint": "^9.36.0",
@@ -17,10 +20,4 @@
     "prettier": "^3.6.2",
     "typescript-eslint": "^8.44.1"
   }
-}
-"scripts": {
-  "lint": "eslint .",
-  "format": "prettier --check .",
-  "test": "jest --coverage",
-  "build": "echo 'Build successful' && mkdir -p dist && cp index.js dist/"
 }
