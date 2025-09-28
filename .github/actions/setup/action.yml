@@ -1,14 +1,10 @@
 name: "Setup Node & Install"
-description: "Reusable step for setting up Node.js and installing dependencies"
-
+description: "Reusable setup step for Node.js"
 runs:
   using: "composite"
   steps:
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
+    - uses: actions/setup-node@v4
       with:
         node-version: '20'
-
-    - name: Install dependencies
-      run: npm install
+    - run: npm install
       shell: bash
