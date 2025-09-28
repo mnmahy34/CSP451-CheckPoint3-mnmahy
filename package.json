@@ -7,11 +7,11 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "lint": "npx eslint .",
-    "format": "npx prettier --check .",
-    "test": "jest --coverage",
-    "build": "echo 'Build successful' && mkdir -p dist && cp index.js dist/"
-  },
+  "lint": "eslint .",
+  "format": "prettier --check .",
+  "test": "jest --coverage",
+  "build": "echo 'Build successful' && mkdir -p dist && cp index.js dist/"
+},
   "devDependencies": {
     "@eslint/js": "^9.36.0",
     "eslint": "^9.36.0",
